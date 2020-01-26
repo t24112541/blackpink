@@ -27,13 +27,12 @@ class controller {
 		return $json;
 	}
 	public function book(){
-		echo "<br>";
+		// echo "<br>";
 		$sqlshow = $this->conn->query('SELECT * FROM db_sale');
 		$check = $sqlshow->num_rows;
 		$ab = 0;
 		$bol = false;
-		do
-		{
+		do{
 			$bol = false;
 			$check++;
 			$s_id= "BP000".$check;
@@ -43,12 +42,10 @@ class controller {
 					echo "not <br>";
 					$bol = true;
 				}
-				//else{
-					// $que=$this->conn->query("insert into db_sale (s_id,t_id,s_date) values ('{$s_id}', '1', '".date('Y-m-d H:i:s')."')");
-					// if(!$que){echo "insert error:".$this->conn->error;}
-				//}
 			}
 		}while($bol);
+		$que=$this->conn->query("insert into db_sale (s_id,t_id,s_date) values ('{$s_id}', '1', '".date('Y-m-d H:i:s')."')");
+		if(!$que){echo "insert error:".$this->conn->error;}
 	}
 }
 
