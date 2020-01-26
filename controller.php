@@ -45,7 +45,10 @@ class controller {
 			}
 		}while($bol);
 		$que=$this->conn->query("insert into db_sale (s_id,t_id,s_date) values ('{$s_id}', '1', '".date('Y-m-d H:i:s')."')");
-		if(!$que){echo "insert error:".$this->conn->error;}
+		if(!$que){echo "insert error:".$this->conn->error; $data["status"]=false;  }
+		else{$data["status"]=true; }
+		$json = json_encode($data); 
+		return $json;
 	}
 }
 
