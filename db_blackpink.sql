@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2020 at 05:34 AM
+-- Generation Time: Jan 26, 2020 at 05:59 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -47,6 +47,13 @@ CREATE TABLE `db_ticket` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Dumping data for table `db_ticket`
+--
+
+INSERT INTO `db_ticket` (`t_id`, `t_count`, `t_date_sale`) VALUES
+(1, 10, '2020-1-26 11:52:20');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -70,7 +77,7 @@ ALTER TABLE `db_ticket`
 -- AUTO_INCREMENT for table `db_ticket`
 --
 ALTER TABLE `db_ticket`
-  MODIFY `t_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `t_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
