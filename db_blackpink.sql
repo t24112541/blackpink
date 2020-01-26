@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2020 at 05:59 AM
+-- Generation Time: Jan 26, 2020 at 08:37 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -33,6 +33,22 @@ CREATE TABLE `db_sale` (
   `t_id` int(11) NOT NULL,
   `s_date` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `db_sale`
+--
+
+INSERT INTO `db_sale` (`s_id`, `t_id`, `s_date`) VALUES
+('BP0001', 1, '2020-1-26 14:34:20\r\n'),
+('BP0002', 2, '2020-1-26 14:35:10'),
+('BP0003', 3, '2020-1-26 14:35:30'),
+('BP0004', 4, '2020-1-26 14:35:50'),
+('BP0005', 5, '2020-1-26 14:35:55'),
+('BP0006', 6, '2020-1-26 14:36:00'),
+('BP0007', 7, '2020-1-26 14:36:20'),
+('BP0008', 8, '2020-1-26 14:36:30'),
+('BP0009', 9, '2020-1-26 14:36:50'),
+('BP0010', 10, '2020-1-26 14:36:55');
 
 -- --------------------------------------------------------
 
